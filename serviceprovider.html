@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>service provider registration</title>
+<style>
+body{
+   background-image:url("background.webp");
+  height: 10%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text
+{
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #203eee;
+	padding:20px;
+	border:1px solid black;
+	color: white;
+}
+input, select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.provider{
+  border-radius: 5px;
+  width:50%;
+  background-color: #f2f2f2;
+  padding: 20px;
+	margin-right: auto;margin-left: auto;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html"><img src="logo.jpg" style="width:80px;margin-top:38px;margin-left:200px;"></a>
+<div class="provider">
+<div class="text">
+<p>hello superIndian person,<br>it's an opportunity to get connect with people who has your need<br>
+get register into a site and get more and more customer for you</p>
+</div>
+<div  >
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">contact no</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="country">service</label>
+    <select id="country" name="country">
+	<option value="0">--- </label>
+      <option value="1">caretaker</option>
+      <option value="2">carpenter</option>
+      <option value="3">construction&engineering</option>
+	<option value="4">cook</option>
+	<option value="5">electrician</option>
+	<option value="6">financial&accounting services</option>
+	<option value="7">home care</option>
+	<option value="8">house cleaner</option>
+	<option value="9">house shifting services</option>
+	<option value="10">interior designer</option>
+	<option value="11">laundry</option>
+	<option value="12">legal services</option>
+	<option value="13">mechanic</option>
+	<option value="14">painter</option>
+	<option value="15">plumber</option>
+	<option value="16">repairman</option>
+	<option value="17">technician</option>
+	<option value="18">security guard</option>
+    </select><br>
+    <label for="experience">experience</label>
+    <input type="number"  name="experience" placeHolder="experience"><br>
+	<label for="payingrange" >paying range</label>
+	<input type="number" name="payingrange"><br>
+	<lable for="experiencedoc">experience document</label>
+	<input type="file" name="experiencedoc" placeHolder="file"><br>
+	<label for="idcard">govt/identity card</label>
+	<input type="file" name="idcard"><br>
+    <input type="submit" value="register">
+  </form>
+
+		
+</div>
+</div>
+</body>
+</html>

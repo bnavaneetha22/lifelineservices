@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>electrician</title>
+<style>
+body{
+  background-image:url("background.jpg");
+  height: 10%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text
+{
+	width:500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #203eee;
+	padding:20px;
+	border:1px solid black;
+	color: white;
+}
+input, select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.provider{
+  border-radius: 5px;
+  width:50%;
+  background-color: #f2f2f2;
+  padding: 20px;
+	margin-right: auto;margin-left: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + label {
+  border-color: #ddd;
+}
+
+:checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+</style>
+</head>
+
+<body>
+
+
+<a href="index.html"><img src="logo.jpg" style="width:80px;margin-top:38px;margin-left:200px;"></a>
+<div class="provider">
+<div class="text">
+<h2>electrician service</h2>
+</div>
+<div  >
+  <form action="/action_page.php">
+    <label for="fname">Full address</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Work details</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="country">choose available paying range:</label>
+    <select id="country" name="country">
+	<option value="0">--- </label>
+      <option value="1">200rs to 500rs</option>
+      <option value="2">500rs to 1000rs</option>
+      <option value="3">1000rs to 5000rs</option>
+	<option value="4">>5000rs</option>
+    </select><br>
+    <label for="noofwmployees">No.of employees needed</label>
+    <input type="number"  name="experience"><br>
+    <label for="persons">Select recommended employee</label>
+	<ul>
+  <li>
+    <input type="checkbox" id="myCheckbox1" />
+    <label for="myCheckbox1"><img src="person1.jpeg" /></label>
+  </li>
+  <li>
+
+    <input type="checkbox" id="myCheckbox2" />
+    <label for="myCheckbox2"><img src="person2.jpeg" /></label>
+  </li>
+  <li>
+
+    <input type="checkbox" id="myCheckbox3" />
+    <label for="myCheckbox3"><img src="person3.jpg" /></label>
+  </li>
+</ul>
+
+    <input type="submit" value="book and pay">
+  </form>
+
+		
+</div>
+</div>
+</body>
+</html>

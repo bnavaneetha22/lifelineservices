@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sign up</title>
+<style>
+body
+{
+	 background-image:url("background.webp");
+}
+input[type=email],input[type=password],input[type=text],select,input[type=submit]
+{
+	padding:10px;
+        border: 2px  solid gray;
+	margin-bottom:5px;
+ 	width:80%;
+	margin-left: 30px;
+	margin-right: auto;
+	margin-bottom:10px;
+}
+
+.form
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+	width:40%;
+	
+	background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:50px;
+}
+</style>
+</head>
+<a href="index.html"><img src="logo.jpg" style="width:80px;margin-top:38px;margin-left:200px;"></a>  
+<div class="form">
+<div class="form_wrapper">
+      <h2 style="margin-bottom:10px; text-align:center;">Registration Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Password" required />
+          </div>
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+            <input type="password" name="password" placeholder="Re-type Password" required />
+          </div>
+          <div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="First Name" />
+              </div>
+            </div>
+		<div class="row clearfix">
+            <div class="col_half">
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Last Name" required />
+              </div>
+            </div>
+          </div>
+            	<div class="input_field radio_option" style="margin-left:30px;margin-bottom:10px;">
+              <input type="radio" name="radiogroup1" id="rd1">
+              <label for="rd1">Male</label>
+              <input type="radio" name="radiogroup1" id="rd2">
+              <label for="rd2">Female</label>
+              </div>
+              <div class="input_field select_option">
+                <select>
+                  <option>Select  state</option>
+                  <option>Andhra Pradesh</option>
+                  <option>Karnataka</option>
+			<option>Kerala</option>
+			<option>tamilnadu</option>
+                </select>
+                <div class="select_arrow"></div>
+              </div>
+            <div class="input_field checkbox_option" style="margin-left:30px;margin-bottom:10px;">
+            	<input type="checkbox" id="cb1">
+    			<label for="cb1">I agree with terms and conditions</label>
+            </div>
+            <div class="input_field checkbox_option">
+          
+            </div>
+          <input class="button" type="submit" value="Register" style="background-color:green;color:white;"/>
+        </form>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
